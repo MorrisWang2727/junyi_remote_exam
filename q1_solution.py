@@ -1,6 +1,6 @@
 # Q1_A
 def get_reversed_word(input_word):
-    if type(input_word) == str:
+    if isinstance(input_word, str):
         return input_word[::-1]
 
 # Q1_B
@@ -12,7 +12,7 @@ def get_reversed_sentence(input_sentence):
         reversed_word_list.append(get_reversed_word(word))
 
     reversed_sentence = ' '.join(reversed_word_list)
-    
+
     return reversed_sentence
 
 if __name__ == "__main__":
